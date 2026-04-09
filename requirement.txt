@@ -1,8 +1,15 @@
-langchain
 langchain-openai
-openai
+langchain
 faiss-cpu
-tiktoken
-python-dotenv
 pandas
-numpy
+requests
+beautifulsoup4
+openai
+gradio
+tiktoken
+langchain-text-splitters
+langchain-google-genai
+langchain-community
+langchain-huggingface
+langchain-classic
+Obtain API Keys:
