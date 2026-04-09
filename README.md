@@ -1,13 +1,14 @@
-RAG Chatbot for Full Stack Academy (Gradio + OpenRouter + FAISS)
+## RAG Chatbot for Full Stack Academy (Gradio + OpenRouter + FAISS)
 This project implements a simple Retrieval-Augmented Generation (RAG) chatbot designed to answer questions about Full Stack Academy, leveraging both website content and a CSV file as data sources. The chatbot is built using LangChain, utilizes FAISS for vector storage, and is served via a Gradio interface. It integrates with OpenRouter for language model access.
 
-Features
+# Features
 Web Scraping: Automatically extracts information from the Full Stack Academy website (https://fullstackacademy.in/).
 CSV Data Ingestion: Incorporates structured data from a course.txt file (simulating course details).
 Vector Database: Uses FAISS to create an efficient vector store for document retrieval.
 OpenRouter Integration: Connects to language models via the OpenRouter API for generating responses.
 Gradio User Interface: Provides an interactive web-based chat interface for easy interaction.
-Technologies Used
+
+# Technologies Used
 Python
 LangChain
 Gradio
@@ -55,14 +56,14 @@ os.environ["OPENAI_API_KEY"] = OPENROUTER_API_KEY
 os.environ["OPENAI_API_BASE"] = "https://openrouter.ai/api/v1"
 
 # For Google Gemini (if used)
-# os.environ["GOOGLE_API_KEY"] = "YOUR_GOOGLE_API_KEY"
+os.environ["GOOGLE_API_KEY"] = "YOUR_GOOGLE_API_KEY"
 Prepare Data: Ensure you have a course.txt file in your project directory (or adjust the path in the notebook) with your course data. For example:
 
 course\tduration\ttiming\ttrainer_name
 Data Science\t4 months\t7pm-9pm\tVarun Maya
 AI Specialist\t3 months\t8pm-10pm\tRahul Verma
 ...
-How to Run
+# How to Run
 Execute the Colab Notebook: Open the .ipynb file in Google Colab and run all cells sequentially. The notebook performs the following steps:
 
 Installs necessary libraries.
@@ -75,10 +76,10 @@ Initializes the RAG qa_chain.
 Launches the Gradio interface.
 Access the Chatbot: Once the Gradio interface launches (after running the last cell), it will provide a local URL and potentially a public share link. Open this URL in your web browser to interact with the chatbot.
 
-Usage
+# Usage
 Type your questions related to Full Stack Academy's courses, trainers, placements, or general information into the chat interface and press Enter. The chatbot will retrieve relevant information from its knowledge base and generate a response.
 
-Example Questions:
+# Example Questions:
 
 "What courses does Full Stack Academy offer?"
 "Who is the trainer for Data Science?"
